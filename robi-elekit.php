@@ -11,6 +11,9 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Domain Path:       /languages
  * Text Domain:      r_elekit
+ * 
+ * Elementor tested up to: 3.21.0
+ * Elementor Pro tested up to: 3.21.0
  */
 
 // if anyone try to access our main file

@@ -44,6 +44,16 @@ class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
                 ],
             ]
         );
+        $this->add_control(
+			'image',
+			[
+				'type' => \Elementor\Controls_Manager::MEDIA,
+				'label' => esc_html__( 'Choose Image', 'textdomain' ),
+				'default' => [
+					'url' => \Elementor\Utils::get_placeholder_image_src(),
+				]
+			]
+		);
 
         $this->end_controls_section();
 
@@ -86,6 +96,7 @@ class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
 		<p class="hello-world">
 			<?php echo $settings['title']; ?>
 		</p>
+        <img src="<?php echo $settings['image']['url'] ?>" alt="<?php echo esc_attr($settings['image']) ?>">
 		<?php
 }
 
